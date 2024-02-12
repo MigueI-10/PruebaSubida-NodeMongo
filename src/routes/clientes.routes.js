@@ -16,7 +16,7 @@ router.put("/clientes/:id", validacion, updateCLiente);
 
 router.patch("/clientes/:id", patchCliente);
 
-router.delete("/clientes/:id", delCliente);
+ router.delete("/clientes/:id", delCliente);
 
 //el default solo se puede poner una vez en el fichero en una sola estructura
 export default router; //exportamos

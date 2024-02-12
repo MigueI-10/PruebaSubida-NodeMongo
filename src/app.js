@@ -9,7 +9,6 @@
 
 import express from 'express'; //al ser un fichero de node js, no es necesario poner el .js
 import routerCliente from './routes/clientes.routes.js'; //siempre se pone
-import routerLogin from './routes/login.routes.js';
 import cors from 'cors';
 
 import {PORT} from './config.js'
@@ -23,7 +22,6 @@ app.use(cors())
 //middleware
 app.use(express.json());
 app.use(routerCliente);
-app.use(routerLogin);
 
 
 //configurar el puerto
